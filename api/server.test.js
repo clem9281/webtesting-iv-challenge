@@ -1,5 +1,6 @@
 const app = require('./server');
 const request = require('supertest');
+const bcrypt = require('bcryptjs');
 
 describe('app', () => {
     describe('get', () => {

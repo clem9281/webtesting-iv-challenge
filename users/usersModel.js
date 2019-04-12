@@ -10,8 +10,13 @@ const insert = async newUser => {
     return user;
 }
 
+const remove = filter => {
+    return db('users').where(filter).del();
+}
+
 module.exports = {
     find,
     findBy,
-    insert
+    insert,
+    remove
 }
